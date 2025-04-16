@@ -13,6 +13,4 @@
   <% end %>
 </div>
 
-<%= form_tag destroy_customer_session_path, method: :delete do %>
-  <%= submit_tag 'sign out' %>
-<% end %>
+<%= button_to "Sign Out", destroy_customer_session_path, method: :delete %>
