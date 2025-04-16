@@ -10,5 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 0) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_16_092353) do
+  create_table "music_classes", force: :cascade do |t|
+    t.integer "session_id"
+    t.integer "instructor_id"
+    t.integer "location_id"
+    t.integer "music_class_series_id"
+    t.string "name"
+    t.text "description"
+    t.integer "level"
+    t.string "day"
+    t.integer "lesson_count"
+    t.integer "duration"
+    t.integer "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 end
