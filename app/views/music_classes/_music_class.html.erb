@@ -1,17 +1,17 @@
 <div id="<%= dom_id music_class %>">
   <p>
     <strong>Session:</strong>
-    <%= music_class.session_id %>
+    <%= "#{music_class.session.season} #{music_class.session.year}" %>
   </p>
 
   <p>
     <strong>Instructor:</strong>
-    <%= music_class.instructor_id %>
+    <%= music_class.instructor.full_name %>
   </p>
 
   <p>
     <strong>Location:</strong>
-    <%= music_class.location_id %>
+    <%= music_class.location.name %>
   </p>
 
   <p>
