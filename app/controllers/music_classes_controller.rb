@@ -12,7 +12,11 @@ class MusicClassesController < ApplicationController
   end
   
   def enroll
-    MusicClassEnrollmentService.instance.enroll(current_customer, @music_class)
+    begin
+      MusicClassEnrollmentService.instance.enroll(current_customer, @music_class)
+    rescue => e
+      flash[:alert] = e.message
+    end
     redirect_to @music_class
   end
   

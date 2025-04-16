@@ -34,7 +34,25 @@ music_class_drum_kits = 3.times.map do |n|
     day: 'Monday',
     lesson_count: 16,
     duration: 90,
+    capacity: 5,
     price: 200,
+    location: location_lincoln_park,
+    instructor: instructor_joel_epstein,
+    session: session_spring_2025,
+  )
+end
+
+music_class_drum_kits_private = 3.times.map do |n|
+  level = n + 1
+  MusicClass.find_or_create_by!(
+    name: 'Drum Kit (Private)',
+    description: 'How to play on a full-size drum kit (Private Lessons)!',
+    level: level,
+    day: 'Monday',
+    lesson_count: 16,
+    duration: 90,
+    capacity: 1,
+    price: 400,
     location: location_lincoln_park,
     instructor: instructor_joel_epstein,
     session: session_spring_2025,
