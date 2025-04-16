@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_16_095229) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_16_104741) do
   create_table "customers", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -21,6 +21,13 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_16_095229) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_customers_on_email", unique: true
     t.index ["reset_password_token"], name: "index_customers_on_reset_password_token", unique: true
+  end
+
+  create_table "customers_music_classes", id: false, force: :cascade do |t|
+    t.integer "customer_id"
+    t.integer "music_class_id"
+    t.index ["customer_id"], name: "index_customers_music_classes_on_customer_id"
+    t.index ["music_class_id"], name: "index_customers_music_classes_on_music_class_id"
   end
 
   create_table "instructors", force: :cascade do |t|
