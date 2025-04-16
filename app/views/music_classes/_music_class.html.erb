@@ -53,5 +53,16 @@
     <strong>Price:</strong>
     <%= music_class.price %>
   </p>
-
+  
+  <p>
+    <% if music_class.enrolled?(current_customer) %>
+      <%= form_for [:cancel_enrollment, music_class], method: :post do |f| %>
+        <%= f.submit 'Cancel Enrollment' %>
+      <% end %>
+    <% else %>
+      <%= form_for [:enroll, music_class], method: :post do |f| %>
+        <%= f.submit 'Enroll' %>
+      <% end %>
+    <% end %>
+  </p>
 </div>
