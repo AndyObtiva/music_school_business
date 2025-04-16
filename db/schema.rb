@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_16_092353) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_16_092800) do
   create_table "music_classes", force: :cascade do |t|
     t.integer "session_id"
     t.integer "instructor_id"
@@ -23,6 +23,14 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_16_092353) do
     t.integer "lesson_count"
     t.integer "duration"
     t.integer "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sessions", force: :cascade do |t|
+    t.integer "year"
+    t.string "month"
+    t.date "start_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
