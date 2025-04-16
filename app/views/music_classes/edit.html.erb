@@ -1,0 +1,12 @@
+<% content_for :title, "Editing music class" %>
+
+<h1>Editing music class</h1>
+
+<%= render "form", music_class: @music_class %>
+
+<br>
+
+<div>
+  <%= link_to "Show this music class", @music_class %> |
+  <%= link_to "Back to music classes", music_classes_path %>
+</div>

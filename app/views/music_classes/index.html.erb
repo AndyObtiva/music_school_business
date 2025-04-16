@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Music classes" %>
+
+<h1>Music classes</h1>
+
+<div id="music_classes">
+  <% @music_classes.each do |music_class| %>
+    <%= render music_class %>
+    <p>
+      <%= link_to "Show this music class", music_class %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New music class", new_music_class_path %>

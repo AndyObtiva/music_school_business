@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  session_id: 1
+  instructor_id: 1
+  location_id: 1
+  music_class_series_id: 1
+  name: MyString
+  description: MyText
+  level: 1
+  day: MyString
+  lesson_count: 1
+  duration: 1
+  price: 1
+
+two:
+  session_id: 1
+  instructor_id: 1
+  location_id: 1
+  music_class_series_id: 1
+  name: MyString
+  description: MyText
+  level: 1
+  day: MyString
+  lesson_count: 1
+  duration: 1
+  price: 1
