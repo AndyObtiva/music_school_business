@@ -1,5 +1,6 @@
 # Music School Business Minimal Demo
-## Example App for Montreal.rb April 2025 Talk "[Domain Driven Design in Ruby on Rails](https://youtu.be/JlJLz2dJlhQ)"
+## Example App for Montreal.rb April 2025 Talk 
+### [Domain Driven Design in Ruby on Rails](https://youtu.be/JlJLz2dJlhQ)
 
 A very minimal demo app that demonstrates ideas from the Montreal.rb April 2025 talk: [Domain Driven Design in Ruby on Rails](https://youtu.be/JlJLz2dJlhQ).
 
