@@ -1,24 +1,12 @@
-# README
+# Music School Business Minimal Demo
+## Example App for Montreal.rb April 2025 Talk "[Domain Driven Design in Ruby on Rails](https://youtu.be/JlJLz2dJlhQ)"
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A very minimal demo app that demonstrates ideas from the Montreal.rb April 2025 talk: [Domain Driven Design in Ruby on Rails](https://youtu.be/JlJLz2dJlhQ).
 
-Things you may want to cover:
+Talk Video: 
 
-* Ruby version
+https://youtu.be/JlJLz2dJlhQ
 
-* System dependencies
+Presentation Slides: 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://docs.google.com/presentation/d/e/2PACX-1vT91M7Aw715dVfewkEn_kcDBjDIBJPN7eB6PH0lEkH41EUFGiL5GANj2rFxIGPU68s4Lm-O8Ch5WHZv/pub?start=false&loop=false&delayms=60000
